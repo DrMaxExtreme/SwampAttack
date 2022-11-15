@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] private Player _target;
 
+    public Player Target => _target;
+
     public event UnityAction Dying;
 
     public void TakeDamage(int damage)
