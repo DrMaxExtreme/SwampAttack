@@ -10,19 +10,21 @@ public class EnemyStateMachine : MonoBehaviour
     private Player _target;
     private State _currentState;
 
-    public State CurrentState => _currentState;
+    public State Current => _currentState;
 
     private void Start()
     {
         _target = GetComponent<Enemy>().Target;
+        Reset(_firstState);
     }
 
     private void Update()
     {
-        if (_currentState != null)
+        if (_currentState == null)
             return;
 
         var nextState = _currentState.GetNextState();
+
         if(nextState != null)
             Transit(nextState);
     }

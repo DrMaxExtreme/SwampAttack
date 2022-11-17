@@ -31,8 +31,23 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void OnEnemyDied(int reward)
+    public void ApplyDamage(int damage)
+    {
+        _currentHealth -= damage;
+
+        if(_currentHealth <= 0)
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnEnemyDied(int reward)
     {
         Money += reward;
+    }
+
+    public void AddMoney(int money)
+    {
+        Money += money;
     }
 }
