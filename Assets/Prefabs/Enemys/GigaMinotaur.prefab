@@ -181,7 +181,7 @@ MonoBehaviour:
   _transitions:
   - {fileID: 5252152455010348975}
   - {fileID: 5252152455010348971}
-  _speed: 0.5
+  _speed: 1.5
 --- !u!114 &5252152455010348975
 MonoBehaviour:
   m_ObjectHideFlags: 0
