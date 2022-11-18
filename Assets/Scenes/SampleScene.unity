@@ -173,7 +173,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4b99962f7c6114abd55745492bd496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawner: {fileID: 1013782451}
+  _spawners:
+  - {fileID: 1013782451}
+  - {fileID: 1156205972}
   _nextWaweButton: {fileID: 1831079043}
 --- !u!1 &52395829
 GameObject:
@@ -1004,7 +1006,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &727195750
 GameObject:
@@ -1476,7 +1478,7 @@ GameObject:
   - component: {fileID: 1013782452}
   - component: {fileID: 1013782451}
   m_Layer: 0
-  m_Name: Spawner
+  m_Name: Spawner_Minotaurs
   m_TagString: Untagged
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -1496,11 +1498,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _waves:
   - Templayte: {fileID: 9173106831600801585, guid: a2a6f9c43ddd1ae448dd0f2651ad2c56, type: 3}
-    Delay: 3
-    Count: 5
-  - Templayte: {fileID: 9173106831600801585, guid: a2a6f9c43ddd1ae448dd0f2651ad2c56, type: 3}
     Delay: 2
     Count: 7
+  - Templayte: {fileID: 9173106831600801585, guid: a2a6f9c43ddd1ae448dd0f2651ad2c56, type: 3}
+    Delay: 1.5
+    Count: 10
+  - Templayte: {fileID: 9173106831600801585, guid: a2a6f9c43ddd1ae448dd0f2651ad2c56, type: 3}
+    Delay: 1
+    Count: 16
   _spawnPoint: {fileID: 1013782452}
   _player: {fileID: 934156525}
 --- !u!4 &1013782452
@@ -1511,7 +1516,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013782450}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.61, y: -3.94, z: 0}
+  m_LocalPosition: {x: -11.5, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1548,6 +1553,62 @@ Transform:
   m_Children: []
   m_Father: {fileID: 934156524}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1156205971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1156205973}
+  - component: {fileID: 1156205972}
+  m_Layer: 0
+  m_Name: Spawner_GigaMinotaurs
+  m_TagString: Untagged
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1156205972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156205971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9e76b37a13d6a4d845ff74ec9eb92f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _waves:
+  - Templayte: {fileID: 5252152455010348966, guid: 9a78230742d40334bbe90ccf44209013, type: 3}
+    Delay: 5
+    Count: 1
+  - Templayte: {fileID: 5252152455010348966, guid: 9a78230742d40334bbe90ccf44209013, type: 3}
+    Delay: 8
+    Count: 3
+  - Templayte: {fileID: 5252152455010348966, guid: 9a78230742d40334bbe90ccf44209013, type: 3}
+    Delay: 8
+    Count: 5
+  _spawnPoint: {fileID: 1156205973}
+  _player: {fileID: 934156525}
+--- !u!4 &1156205973
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1156205971}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -11.5, y: -4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1165796524
 GameObject:
@@ -1964,7 +2025,7 @@ RectTransform:
   m_Children:
   - {fileID: 44369808}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
