@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6433942318248987348}
   - component: {fileID: 6532551221251864319}
   - component: {fileID: 2143257780316900305}
+  - component: {fileID: -336156770678569009}
   m_Layer: 5
   m_Name: Weapon
   m_TagString: Untagged
@@ -79,6 +80,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &-336156770678569009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670037353046210189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29557537816cc844c9720475f6ce12fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _label: {fileID: 8909206895028644151}
+  _price: {fileID: 4196870034366224969}
+  _icon: {fileID: 6251465216602461717}
+  _sellButton: {fileID: 2398938156048207182}
 --- !u!1 &811232492502747092
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,7 +319,7 @@ GameObject:
   - component: {fileID: 6669343813893389378}
   - component: {fileID: 4196870034366224969}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: price
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
