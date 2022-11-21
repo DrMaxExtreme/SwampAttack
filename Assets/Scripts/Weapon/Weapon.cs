@@ -7,6 +7,7 @@ public abstract class Weapon : MonoBehaviour
     [SerializeField] private string _label;
     [SerializeField] private int _price;
     [SerializeField] private Sprite _icon;
+    [SerializeField] private float _delayBetweenShots;
     [SerializeField] private bool _isBuyed = false;
 
     [SerializeField] protected Bullet Bullet;
@@ -14,9 +15,10 @@ public abstract class Weapon : MonoBehaviour
     public string Label => _label;
     public int Price => _price;
     public Sprite Icon => _icon;
+    public float DelayBetweenShots => _delayBetweenShots;
     public bool IsBuyed => _isBuyed;
 
-    public abstract void Shoot(Transform shootPoint);
+    public abstract void Shoot(Transform shootPoint, float delayBetweenShots = 0);
 
     public void Buy()
     {

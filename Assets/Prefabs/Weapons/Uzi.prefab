@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4070578230871053689}
   - component: {fileID: 6052355305103467246}
   m_Layer: 0
-  m_Name: Pistol
+  m_Name: Uzi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,9 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa66e67e138900943ab7ac8c939b9c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _label: Pistol
-  _price: 0
-  _icon: {fileID: 21300000, guid: 0d4a6fac843dd5c4884045e45e0b1eb9, type: 3}
-  _delayBetweenShots: 1
-  _isBuyed: 1
-  Bullet: {fileID: 5911088491889937750, guid: 119dd3a21b488384f94cb0678bc6374f, type: 3}
+  _label: Uzi
+  _price: 300
+  _icon: {fileID: 21300000, guid: b6b4c9f5ca4dd9c4da9df5ecc7e6de96, type: 3}
+  _delayBetweenShots: 0.2
+  _isBuyed: 0
+  Bullet: {fileID: 5911088491889937750, guid: 0a7658be611bdc94292c43e0f9a8732e, type: 3}

@@ -840,6 +840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _weapons:
   - {fileID: 6052355305103467246, guid: 6016ed1c4d4a742448512e5e02e7f278, type: 3}
+  - {fileID: 6052355305103467246, guid: bd168e3cd11f53d49b58745f60bb27e6, type: 3}
   _player: {fileID: 934156525}
   _template: {fileID: -336156770678569009, guid: d1fa5f9659bcd364484c9a783fb08b75, type: 3}
   _itemContainer: {fileID: 499922156}
@@ -1061,7 +1062,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 268993148}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 934156525}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: NextWeapon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &268993148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5917,7 +5930,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1819630893}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 934156525}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: PreviosWeapon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1819630893
 MonoBehaviour:
   m_ObjectHideFlags: 0
