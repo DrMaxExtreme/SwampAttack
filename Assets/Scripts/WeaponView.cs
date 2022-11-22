@@ -17,6 +17,11 @@ public class WeaponView : MonoBehaviour
 
     public event UnityAction<Weapon, WeaponView> SellButtonClick;
 
+    private void Start()
+    {
+        TryLockItem();
+    }
+
     private void OnEnable()
     {
         _sellButton.onClick.AddListener(OnButtonClick);

@@ -840,6 +840,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _weapons:
   - {fileID: 6052355305103467246, guid: 6016ed1c4d4a742448512e5e02e7f278, type: 3}
+  - {fileID: 1356927380046863799, guid: 26d6b65c797414b4a94cec2b9beaf438, type: 3}
   _player: {fileID: 934156525}
   _template: {fileID: -336156770678569009, guid: d1fa5f9659bcd364484c9a783fb08b75, type: 3}
   _itemContainer: {fileID: 499922156}
@@ -1061,7 +1062,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 268993148}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 934156525}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: NextWeapon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &268993148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3025,6 +3038,8 @@ MonoBehaviour:
   _weapons:
   - {fileID: 6052355305103467246, guid: 6016ed1c4d4a742448512e5e02e7f278, type: 3}
   _shootPoint: {fileID: 1017750745}
+  _delayBetweenSootsUzi: 0.2
+  _sootsPerClickUzi: 3
 --- !u!1 &958999157
 GameObject:
   m_ObjectHideFlags: 0
@@ -5917,7 +5932,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1819630893}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 934156525}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: PreviosWeapon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1819630893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6715,7 +6742,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -2, y: -0.19006348}
+  m_AnchoredPosition: {x: -2, y: -0.1899414}
   m_SizeDelta: {x: 160, y: 143.42792}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2128953963
