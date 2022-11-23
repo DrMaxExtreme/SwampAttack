@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7991224623922102179
+--- !u!1 &718998240763139790
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4070578230871053689}
-  - component: {fileID: 1356927380046863799}
+  - component: {fileID: 7804969875258566631}
+  - component: {fileID: 2009010055145464468}
   m_Layer: 0
-  m_Name: Uzi
+  m_Name: Shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4070578230871053689
+--- !u!4 &7804969875258566631
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7991224623922102179}
+  m_GameObject: {fileID: 718998240763139790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,20 +32,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1356927380046863799
+--- !u!114 &2009010055145464468
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7991224623922102179}
+  m_GameObject: {fileID: 718998240763139790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5404f480574ce34418cd2561870a9b36, type: 3}
+  m_Script: {fileID: 11500000, guid: e13c7ccef007e504db534057499cff12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _label: Uzi
+  _label: Shotgun
   _price: 30
-  _icon: {fileID: 21300000, guid: b6b4c9f5ca4dd9c4da9df5ecc7e6de96, type: 3}
+  _icon: {fileID: 21300000, guid: 12f47f849a0323d429eecd3d0c42cbe6, type: 3}
   _isBuyed: 0
   Bullet: {fileID: 5911088491889937750, guid: 910a898b293fcaa4f9d4367b2ab9527e, type: 3}

@@ -8,18 +8,15 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private int _health;
     [SerializeField] private List<Weapon> _weapons;
-    [SerializeField] private Transform _shootPoint;
-    [SerializeField] private float _delayBetweenSootsUzi;
-    [SerializeField] private int _sootsPerClickUzi;
-
-    private float _timeAfterLastShootUzi;
+    [SerializeField] private List<Transform> _shootPoints;
+    
     private Weapon _currentWeapon;
     private int _currentWeaponNumber = 0;
     private int _currentHealth;
-    private int _bulletsInUzi = 0;
     private Animator _animator;
 
     public int Money { get; private set; }
+    public List<Transform> ShootPoint => _shootPoints;
 
     public event UnityAction<int, int> HealthChanged;
     public event UnityAction<int> MoneyChanget;
@@ -34,18 +31,9 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        _timeAfterLastShootUzi += Time.deltaTime;
-
-        if (Input.GetMouseButtonDown(0) && _weapons[_currentWeaponNumber].TryGetComponent(out Uzi uzi))
-        {
-            _bulletsInUzi += _sootsPerClickUzi;
-        }
-
-        ShootsUzi();
-
         if (Input.GetMouseButtonDown(0) && this != null)
         {
-            _currentWeapon.Shoot(_shootPoint);
+            _currentWeapon.Charge(_shootPoints);
         }
     }
 
@@ -101,15 +89,5 @@ public class Player : MonoBehaviour
     private void ChangeWeapon(Weapon weapon)
     {
         _currentWeapon = weapon;
-    }
-
-    private void ShootsUzi()
-    {
-        if (_timeAfterLastShootUzi >= _delayBetweenSootsUzi && _bulletsInUzi > 0)
-        {
-            _currentWeapon.Shoot(_shootPoint);
-            _timeAfterLastShootUzi = 0;
-            _bulletsInUzi--;
-        }
     }
 }

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7991224623922102179
+--- !u!1 &8951332942872038764
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4070578230871053689}
-  - component: {fileID: 6052355305103467246}
+  - component: {fileID: 8951332942872038762}
+  - component: {fileID: 8951332942872038765}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4070578230871053689
+--- !u!4 &8951332942872038762
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7991224623922102179}
+  m_GameObject: {fileID: 8951332942872038764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,20 +32,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6052355305103467246
+--- !u!114 &8951332942872038765
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7991224623922102179}
+  m_GameObject: {fileID: 8951332942872038764}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa66e67e138900943ab7ac8c939b9c33, type: 3}
+  m_Script: {fileID: 11500000, guid: b68967b424df2614ba43783e839c67b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _label: Pistol
+  _label: Pistiol
   _price: 0
   _icon: {fileID: 21300000, guid: 0d4a6fac843dd5c4884045e45e0b1eb9, type: 3}
   _isBuyed: 1
   Bullet: {fileID: 5911088491889937750, guid: 119dd3a21b488384f94cb0678bc6374f, type: 3}
+  _delayBetweenSoots: 0.3
+  _shootsPerClick: 1

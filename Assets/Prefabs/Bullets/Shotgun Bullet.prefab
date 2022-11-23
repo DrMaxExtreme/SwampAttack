@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3817779644919528042}
   - component: {fileID: 1209956761933854677}
   m_Layer: 0
-  m_Name: Uzi Bullet
+  m_Name: Shotgun Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
