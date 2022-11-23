@@ -12,11 +12,11 @@ public class Player : MonoBehaviour
     [SerializeField] private float _delayBetweenSootsUzi;
     [SerializeField] private int _sootsPerClickUzi;
 
-
     private float _timeAfterLastShootUzi;
     private Weapon _currentWeapon;
     private int _currentWeaponNumber = 0;
     private int _currentHealth;
+    private int _bulletsInUzi = 0;
     private Animator _animator;
 
     public int Money { get; private set; }
@@ -38,16 +38,12 @@ public class Player : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0) && _weapons[_currentWeaponNumber].TryGetComponent(out Uzi uzi))
         {
-            for (int i = 0; i < _sootsPerClickUzi; i++)
-            {
-                if (_timeAfterLastShootUzi >= _delayBetweenSootsUzi)
-                {
-                    _currentWeapon.Shoot(_shootPoint);
-                    _timeAfterLastShootUzi = 0;
-                }
-            }
+            _bulletsInUzi += _sootsPerClickUzi;
         }
-        else if (Input.GetMouseButtonDown(0) && this != null)
+
+        ShootsUzi();
+
+        if (Input.GetMouseButtonDown(0) && this != null)
         {
             _currentWeapon.Shoot(_shootPoint);
         }
@@ -105,5 +101,15 @@ public class Player : MonoBehaviour
     private void ChangeWeapon(Weapon weapon)
     {
         _currentWeapon = weapon;
+    }
+
+    private void ShootsUzi()
+    {
+        if (_timeAfterLastShootUzi >= _delayBetweenSootsUzi && _bulletsInUzi > 0)
+        {
+            _currentWeapon.Shoot(_shootPoint);
+            _timeAfterLastShootUzi = 0;
+            _bulletsInUzi--;
+        }
     }
 }

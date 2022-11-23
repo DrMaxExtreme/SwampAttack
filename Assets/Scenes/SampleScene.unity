@@ -3038,7 +3038,7 @@ MonoBehaviour:
   _weapons:
   - {fileID: 6052355305103467246, guid: 6016ed1c4d4a742448512e5e02e7f278, type: 3}
   _shootPoint: {fileID: 1017750745}
-  _delayBetweenSootsUzi: 0.2
+  _delayBetweenSootsUzi: 0.05
   _sootsPerClickUzi: 3
 --- !u!1 &958999157
 GameObject:
